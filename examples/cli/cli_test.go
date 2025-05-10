@@ -10,7 +10,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/tetratelabs/wazero/internal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
 )
 
 //go:embed testdata/cli.wasm

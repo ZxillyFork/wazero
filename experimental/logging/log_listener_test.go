@@ -6,13 +6,13 @@ import (
 	"math"
 	"testing"
 
-	"github.com/tetratelabs/wazero/api"
-	"github.com/tetratelabs/wazero/experimental"
-	"github.com/tetratelabs/wazero/experimental/logging"
-	"github.com/tetratelabs/wazero/experimental/wazerotest"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	wasi "github.com/tetratelabs/wazero/internal/wasip1"
-	"github.com/tetratelabs/wazero/internal/wasm"
+	"github.com/ZxillyFork/wazero/api"
+	"github.com/ZxillyFork/wazero/experimental"
+	"github.com/ZxillyFork/wazero/experimental/logging"
+	"github.com/ZxillyFork/wazero/experimental/wazerotest"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	wasi "github.com/ZxillyFork/wazero/notinternal/wasip1"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
 )
 
 type arbitrary struct{}

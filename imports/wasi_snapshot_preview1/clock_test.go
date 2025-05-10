@@ -4,9 +4,9 @@ import (
 	_ "embed"
 	"testing"
 
-	"github.com/tetratelabs/wazero"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/internal/wasip1"
+	"github.com/ZxillyFork/wazero"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/wasip1"
 )
 
 func Test_clockResGet(t *testing.T) {

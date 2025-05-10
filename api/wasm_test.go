@@ -6,7 +6,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/tetratelabs/wazero/internal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
 )
 
 func TestExternTypeName(t *testing.T) {

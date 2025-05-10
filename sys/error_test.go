@@ -5,8 +5,8 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/sys"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/sys"
 )
 
 type notExitError struct {

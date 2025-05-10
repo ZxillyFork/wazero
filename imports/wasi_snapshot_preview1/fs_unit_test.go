@@ -4,12 +4,12 @@ import (
 	"os"
 	"testing"
 
-	experimentalsys "github.com/tetratelabs/wazero/experimental/sys"
-	"github.com/tetratelabs/wazero/internal/fstest"
-	"github.com/tetratelabs/wazero/internal/sys"
-	"github.com/tetratelabs/wazero/internal/sysfs"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/internal/wasip1"
+	experimentalsys "github.com/ZxillyFork/wazero/experimental/sys"
+	"github.com/ZxillyFork/wazero/notinternal/fstest"
+	"github.com/ZxillyFork/wazero/notinternal/sys"
+	"github.com/ZxillyFork/wazero/notinternal/sysfs"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/wasip1"
 )
 
 func Test_maxDirents(t *testing.T) {

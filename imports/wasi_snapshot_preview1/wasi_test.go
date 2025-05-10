@@ -7,15 +7,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tetratelabs/wazero"
-	"github.com/tetratelabs/wazero/api"
-	"github.com/tetratelabs/wazero/experimental"
-	"github.com/tetratelabs/wazero/experimental/logging"
-	"github.com/tetratelabs/wazero/imports/wasi_snapshot_preview1"
-	"github.com/tetratelabs/wazero/internal/testing/proxy"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/internal/wasip1"
-	"github.com/tetratelabs/wazero/sys"
+	"github.com/ZxillyFork/wazero"
+	"github.com/ZxillyFork/wazero/api"
+	"github.com/ZxillyFork/wazero/experimental"
+	"github.com/ZxillyFork/wazero/experimental/logging"
+	"github.com/ZxillyFork/wazero/imports/wasi_snapshot_preview1"
+	"github.com/ZxillyFork/wazero/notinternal/testing/proxy"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/wasip1"
+	"github.com/ZxillyFork/wazero/sys"
 )
 
 type arbitrary struct{}

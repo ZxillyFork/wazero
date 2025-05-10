@@ -1,8 +1,8 @@
 package table
 
 import (
-	"github.com/tetratelabs/wazero/api"
-	"github.com/tetratelabs/wazero/internal/wasm"
+	"github.com/ZxillyFork/wazero/api"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
 )
 
 // LookupFunction tries to get an api.Function from the table instance specified by `tableIndex` and `tableOffset` in the

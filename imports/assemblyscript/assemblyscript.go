@@ -33,13 +33,13 @@ import (
 	"strings"
 	"unicode/utf16"
 
-	"github.com/tetratelabs/wazero"
-	"github.com/tetratelabs/wazero/api"
-	experimentalsys "github.com/tetratelabs/wazero/experimental/sys"
-	. "github.com/tetratelabs/wazero/internal/assemblyscript"
-	internalsys "github.com/tetratelabs/wazero/internal/sys"
-	"github.com/tetratelabs/wazero/internal/wasm"
-	"github.com/tetratelabs/wazero/sys"
+	"github.com/ZxillyFork/wazero"
+	"github.com/ZxillyFork/wazero/api"
+	experimentalsys "github.com/ZxillyFork/wazero/experimental/sys"
+	. "github.com/ZxillyFork/wazero/notinternal/assemblyscript"
+	internalsys "github.com/ZxillyFork/wazero/notinternal/sys"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
+	"github.com/ZxillyFork/wazero/sys"
 )
 
 const (

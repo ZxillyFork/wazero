@@ -9,9 +9,9 @@ import (
 	goruntime "runtime"
 	"testing"
 
-	"github.com/tetratelabs/wazero/internal/platform"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/internal/wasm"
+	"github.com/ZxillyFork/wazero/notinternal/platform"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
 )
 
 //go:embed testdata/fac.wasm

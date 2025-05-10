@@ -8,15 +8,15 @@ import (
 	"testing"
 	"time"
 
-	"github.com/tetratelabs/wazero/api"
-	"github.com/tetratelabs/wazero/experimental"
-	"github.com/tetratelabs/wazero/internal/filecache"
-	"github.com/tetratelabs/wazero/internal/leb128"
-	"github.com/tetratelabs/wazero/internal/platform"
-	"github.com/tetratelabs/wazero/internal/testing/binaryencoding"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/internal/wasm"
-	"github.com/tetratelabs/wazero/sys"
+	"github.com/ZxillyFork/wazero/api"
+	"github.com/ZxillyFork/wazero/experimental"
+	"github.com/ZxillyFork/wazero/notinternal/filecache"
+	"github.com/ZxillyFork/wazero/notinternal/leb128"
+	"github.com/ZxillyFork/wazero/notinternal/platform"
+	"github.com/ZxillyFork/wazero/notinternal/testing/binaryencoding"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
+	"github.com/ZxillyFork/wazero/sys"
 )
 
 type arbitrary struct{}

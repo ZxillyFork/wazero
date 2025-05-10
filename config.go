@@ -10,15 +10,15 @@ import (
 	"net"
 	"time"
 
-	"github.com/tetratelabs/wazero/api"
-	experimentalsys "github.com/tetratelabs/wazero/experimental/sys"
-	"github.com/tetratelabs/wazero/internal/filecache"
-	"github.com/tetratelabs/wazero/internal/internalapi"
-	"github.com/tetratelabs/wazero/internal/platform"
-	internalsock "github.com/tetratelabs/wazero/internal/sock"
-	internalsys "github.com/tetratelabs/wazero/internal/sys"
-	"github.com/tetratelabs/wazero/internal/wasm"
-	"github.com/tetratelabs/wazero/sys"
+	"github.com/ZxillyFork/wazero/api"
+	experimentalsys "github.com/ZxillyFork/wazero/experimental/sys"
+	"github.com/ZxillyFork/wazero/notinternal/filecache"
+	"github.com/ZxillyFork/wazero/notinternal/internalapi"
+	"github.com/ZxillyFork/wazero/notinternal/platform"
+	internalsock "github.com/ZxillyFork/wazero/notinternal/sock"
+	internalsys "github.com/ZxillyFork/wazero/notinternal/sys"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
+	"github.com/ZxillyFork/wazero/sys"
 )
 
 // RuntimeConfig controls runtime behavior, with the default implementation as

@@ -5,12 +5,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/tetratelabs/wazero"
-	"github.com/tetratelabs/wazero/api"
-	"github.com/tetratelabs/wazero/experimental"
-	"github.com/tetratelabs/wazero/internal/testing/binaryencoding"
-	"github.com/tetratelabs/wazero/internal/testing/require"
-	"github.com/tetratelabs/wazero/internal/wasm"
+	"github.com/ZxillyFork/wazero"
+	"github.com/ZxillyFork/wazero/api"
+	"github.com/ZxillyFork/wazero/experimental"
+	"github.com/ZxillyFork/wazero/notinternal/testing/binaryencoding"
+	"github.com/ZxillyFork/wazero/notinternal/testing/require"
+	"github.com/ZxillyFork/wazero/notinternal/wasm"
 )
 
 func TestImportResolver(t *testing.T) {

@@ -7,12 +7,12 @@ import (
 	"log"
 	"time"
 
-	"github.com/tetratelabs/wazero"
+	"github.com/ZxillyFork/wazero"
 )
 
 // infiniteLoopWasm exports a function named "infinite_loop" that never exits.
 //
-//go:embed internal/integration_test/engine/testdata/infinite_loop.wasm
+//go:embed notinternal/integration_test/engine/testdata/infinite_loop.wasm
 var infiniteLoopWasm []byte
 
 // ExampleRuntimeConfig_WithCloseOnContextDone_context_timeout demonstrates how to ensure the termination
