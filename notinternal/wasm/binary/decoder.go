@@ -22,6 +22,7 @@ func DecodeModule(
 	memoryCapacityFromMax,
 	dwarfEnabled, storeCustomSections bool,
 ) (*wasm.Module, error) {
+	allSize := len(binary)
 	r := bytes.NewReader(binary)
 
 	// Magic number.
@@ -37,9 +38,14 @@ func DecodeModule(
 
 	memSizer := newMemorySizer(memoryLimitPages, memoryCapacityFromMax)
 
-	m := &wasm.Module{}
+	m := &wasm.Module{
+		Sections: make(map[string]*wasm.GenericSection),
+	}
 	var info, line, str, abbrev, ranges []byte // For DWARF Data.
 	for {
+		currentOffset := allSize - r.Len()
+		genericSectionName := ""
+
 		// TODO: except custom sections, all others are required to be in order, but we aren't checking yet.
 		// See https://www.w3.org/TR/2019/REC-wasm-core-1-20191205/#modules%E2%91%A0%E2%93%AA
 		sectionID, err := r.ReadByte()
@@ -103,6 +109,7 @@ func DecodeModule(
 			} else {
 				m.NameSection, err = decodeNameSection(r, uint64(limit))
 			}
+			genericSectionName = fmt.Sprintf("%s", name)
 		case wasm.SectionIDType:
 			m.TypeSection, err = decodeTypeSection(enabledFeatures, r)
 		case wasm.SectionIDImport:
@@ -149,6 +156,14 @@ func DecodeModule(
 
 		if err != nil {
 			return nil, fmt.Errorf("section %s: %v", wasm.SectionIDName(sectionID), err)
+		}
+
+		if genericSectionName == "" {
+			genericSectionName = wasm.SectionIDName(sectionID)
+		}
+		m.Sections[genericSectionName] = &wasm.GenericSection{
+			Offset: currentOffset,
+			Size:   allSize - r.Len() - currentOffset,
 		}
 	}
 

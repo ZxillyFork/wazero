@@ -18,6 +18,11 @@ import (
 	"github.com/ZxillyFork/wazero/notinternal/wasmdebug"
 )
 
+type GenericSection struct {
+	Offset int
+	Size   int
+}
+
 // Module is a WebAssembly binary representation.
 // See https://www.w3.org/TR/2019/REC-wasm-core-1-20191205/#modules%E2%91%A8
 //
@@ -185,6 +190,8 @@ type Module struct {
 	// as described in https://yurydelendik.github.io/webassembly-dwarf/, though it is not specified in the Wasm
 	// specification: https://github.com/WebAssembly/debugging/issues/1
 	DWARFLines *wasmdebug.DWARFLines
+
+	Sections map[string]*GenericSection
 }
 
 // ModuleID represents sha256 hash value uniquely assigned to Module.
